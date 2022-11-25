@@ -66,7 +66,7 @@ public final class RestProxyGenerator implements IProxyGenerator {
         @Override
         public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
             if (method.getDeclaringClass() == Object.class) {
-                return method.invoke(proxy, args);
+                return method.invoke(this, args);
             }
             return RestProxyGenerator.this.restMethodRegistry.findMethod(method).orElseThrow(() ->
                     new IllegalStateException("Could not find rest method for proxied method \"" + method.toGenericString() + "\"")).invoke(args);

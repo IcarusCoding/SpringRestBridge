@@ -10,14 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>rest-bridge-spring</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>de.intelligence.rest</groupId>
-            <artifactId>rest-bridge-api</artifactId>
-            <version>1.0</version>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>

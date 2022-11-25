@@ -11,4 +11,7 @@ public @interface RestClientController {
 
     String value() default "";
 
+    // Used by extensions only
+    String strategy() default "";
+
 }
